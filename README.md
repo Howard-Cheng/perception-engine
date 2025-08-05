@@ -2,48 +2,8 @@
 
 ## Project Overview
 **Timeline**: August 5, 2025 - August 31, 2025 (3 weeks + weekend buffer)  
-**Team Size**: 3 Python developers  
+**Team Size**: 3.5 developers (Howard + Zikang + Kehan + Zihan (partial))  
 **Delivery**: Tool implementations with documentation for MCP/Gemini integration
-
-## Android Companion App Requirements
-
-For full Android functionality, a companion app is recommended to handle:
-- **MediaProjection API** for screen recording (requires user consent)
-- **Camera2 API** for advanced camera control
-- **AudioRecord API** for continuous audio streaming
-- **Location Services** for GPS/Network location
-- **ActivityManager** for app context monitoring
-
-The companion app would:
-1. Run as a background service
-2. Communicate via ADB or network socket
-3. Handle Android permissions properly
-4. Provide data to the Python perception tools
-
-**Alternative**: For MVP, basic ADB commands provide limited but functional access without a companion app.
-
-## Cross-Platform Architecture Considerations
-
-### Hybrid Implementation Strategy
-Given the platform differences, the recommended approach is:
-
-1. **Shared Core Logic**: Common algorithms and data processing
-2. **Platform Adapters**: Separate implementations for Windows and Android
-3. **Factory Pattern**: Runtime selection of appropriate adapter
-4. **Graceful Degradation**: Fallback options when features unavailable
-
-### Communication Architecture
-- **Windows PC**: Direct local execution
-- **Android Devices**: 
-  - **USB**: ADB over USB (requires debugging enabled)
-  - **Network**: ADB over WiFi or custom socket protocol
-  - **Companion App**: REST API or WebSocket for real-time data
-
-### Performance Trade-offs
-- **Native Windows**: Full performance, all features available
-- **Android via ADB**: 15-30% overhead, limited features
-- **Android with Companion App**: Near-native performance, full features
-  
 
 ## Tool Inventory & Technical Implementation
 
