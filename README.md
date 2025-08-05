@@ -1,4 +1,4 @@
-# Perception Tools - 3-Week Development Roadmap
+# Perception Engine: 3-Week MVP Roadmap
 
 ## Project Overview
 **Timeline**: August 5, 2025 - August 31, 2025 (3 weeks + weekend buffer)  
