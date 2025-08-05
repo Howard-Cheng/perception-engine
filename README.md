@@ -1,7 +1,7 @@
 # Perception Engine: 3-Week MVP Roadmap
 
 ## Project Overview
-**Timeline**: August 5, 2025 - August 31, 2025 (3 weeks + weekend buffer)  
+**Timeline**: August 6, 2025 - August 31, 2025 (3 weeks + weekend buffer)  
 **Team Size**: 3.5 developers (Howard + Zikang + Kehan + Zihan (partial))  
 **Delivery**: Tool implementations with documentation for MCP/Gemini integration
 
